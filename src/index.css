@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+/* ======= Base Style ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.6;
+}
+.full-screen-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../src/assets/all-images/drive.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.full-screen-div h1 {
+  font-size: 3rem;
+  color: white; /* Adjust text color to stand out against the background */
+  margin-bottom: 1rem;
+}
+
+.full-screen-div p {
+  font-size: 1.5rem;
+  color: white; /* Adjust text color to stand out against the background */
+}
+
+/* ======= Typography ====== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000d6b;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+h3,
+h4 {
+  font-size: 1.8rem;
+}
+
+h5,
+h6 {
+  font-size: 1.4rem;
+}
+
+p {
+  color: #5a5a5a;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: #000d6b;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f9a826;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.section__title {
+  color: #000d6b;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section__subtitle {
+  color: #f9a826;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.section__description {
+  color: #7c8a97;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ======= Button Styles ====== */
+.btn {
+  padding: 10px 20px;
+  background: #000d6b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #f9a826;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 13, 107, 0.5);
+}
+
+/* ======= Section Styles ====== */
+section {
+  padding: 60px 0;
+}
+
+.section--dark {
+  background-color: #f4f7fc;
+}
+
+/* ======= Card Styles ====== */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000d6b;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  color: #5a5a5a;
+  font-size: 1rem;
+}
+
+/* ======= Form Styles ====== */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #000d6b;
+  box-shadow: 0 0 5px rgba(0, 13, 107, 0.3);
+  outline: none;
+}
+
+/* ======= Media Queries ====== */
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+
+  .section__title {
+    font-size: 2rem;
+  }
+
+  .section__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section__title {
+    font-size: 1.8rem;
+  }
+
+  .section__subtitle {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
+}
